@@ -44,3 +44,5 @@ The hero is now a compact 600 × 320 banner (was 600 × 580), so the letter star
 - Slogan corrected to "Trade Better, / Build Brighter Future." (same serif-italic over sans treatment).
 - Card copy: "Trading capacity" is now "Leverage up to" (1:2000), and "Spreads & pricing" is now "Spread from" (0 pips). Edited in `source/feature-art.html`, `section.html` and `export.html`. Email alt text updated to match.
 - Card slices are exported from `export.html` at 1200 × 784 in Chrome with `--force-color-profile=display-p3-d65`, then cut into left 600 × 784 and right 600 × 392 halves. This matches the colour of the approved v24–v27 slices; a default sRGB capture renders noticeably more saturated.
+- Removed the "From your Loyal Primus team" eyebrow above the letter heading.
+- Hero: the back end of the coin rail now fades into black (feathered radial and linear overlay in `source/hero-compact-art.html`, placed under the headline). This hides the hard rail cap and the backdrop-plane edge; the raw Blender render is unchanged.

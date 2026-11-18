@@ -27,8 +27,7 @@ html=f'''<!doctype html><html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" 
 <tr><td align="center" bgcolor="#000000" style="padding:4% 0 0;background:#000000;font-size:0;line-height:0;"><img src="assets/logo.png" alt="Loyal Primus" width="200" style="display:block;width:33.333333%;max-width:200px;height:auto;margin:0 auto;"></td></tr>
 <tr><td bgcolor="#000000" style="padding:0;background:#000000;"><h1 style="margin:0;font-size:0;line-height:0;font-weight:normal;"><img src="assets/hero-compact.jpg" alt="Trade Better, Build Brighter Future." width="600" style="width:100%;height:auto;display:block;"></h1></td></tr>
 <tr><td class="reading" bgcolor="#030609" style="padding:40px 48px 40px;background:#030609;">
-<p style="font-size:10px;line-height:14px;letter-spacing:1.7px;color:#FFFFFF;">FROM YOUR LOYAL PRIMUS TEAM</p>
-<h2 class="letter-lead" style="margin:15px 0 27px;font-family:Arial,Helvetica,sans-serif;font-size:30px;line-height:37px;letter-spacing:-1px;font-weight:bold;color:#FFFFFF;">A personal thank you.</h2>
+<h2 class="letter-lead" style="margin:0 0 27px;font-family:Arial,Helvetica,sans-serif;font-size:30px;line-height:37px;letter-spacing:-1px;font-weight:bold;color:#FFFFFF;">A personal thank you.</h2>
 <p class="letter-copy" style="margin:0 0 21px;font-size:16px;line-height:27px;color:#FFFFFF;">{COPY['greeting']}</p>
 {paras}
 <p style="padding-top:3px;font-size:14px;line-height:23px;color:#FFFFFF;">{COPY['signoff']}<br><strong style="font-weight:normal;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:29px;font-style:normal;color:#FFFFFF;">{COPY['sender']}</strong></p>

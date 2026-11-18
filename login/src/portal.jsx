@@ -144,7 +144,7 @@ function Portal(){
     <Background theme={theme}/>
     <header><a className="brand" href="https://loyalprimusmarkets.com/" aria-label="Loyal Primus home"><img src="assets/logo-loyalprimus-full.png" width="414" height="33" alt="Loyal Primus"/></a>
       <div className="header-actions"><ThemeToggle theme={theme} onChange={setTheme}/><Glass className="nav-glass"><a className="website" href="https://loyalprimusmarkets.com/">Main website <Icon name="external"/></a></Glass></div></header>
-    <section className="identity" aria-label="Loyal Primus"><p className="headline">Trade Better<span>Build Better Future.</span></p>
+    <section className="identity" aria-label="Loyal Primus"><p className="headline">Trade Better,<span>Build Brighter Future.</span></p>
       <div className="credentials"><img src="assets/asic-regulations.png" alt="ASIC badge"/><i aria-hidden="true"/><img src="assets/fsca-regulations.png" alt="FSCA badge"/></div>
     </section>
     <Login/>
