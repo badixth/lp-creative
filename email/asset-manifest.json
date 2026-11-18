@@ -1,7 +1,7 @@
 {
   "version": "v28",
   "native_rerenders": 1,
-  "revision": "compact header: hero re-framed in Blender to a wide 600x320 banner; logo row tightened",
+  "revision": "v28: compact Blender-framed header; slogan \"Trade Better, Build Brighter Future.\"; cards read \"Leverage up to 1:2000\" and \"Spread from 0 pips\"",
   "assets": [
     {
       "file": "assets/capacity-platform.png",
@@ -19,8 +19,8 @@
         600,
         392
       ],
-      "bytes": 30778,
-      "sha256": "3008d8709c92e56d052adc70b68be171eae723bc684870f902f5fdb82ccf997f",
+      "bytes": 35502,
+      "sha256": "1e328e4c7f392ad0907b50922ad7b4e3a61d578c7fc69387dd02a85cae3f0c28",
       "used_in_email": true
     },
     {
@@ -39,8 +39,8 @@
         600,
         392
       ],
-      "bytes": 29608,
-      "sha256": "26d97dfc7c907f4135bb9ed430a7aeb78695fbae217a61838b0152c4512f7423",
+      "bytes": 35501,
+      "sha256": "b1db977fbca9ce4a74f6501cc0974b90c92cc615ea82751130fc18d64e8fe692",
       "used_in_email": true
     },
     {
@@ -79,8 +79,8 @@
         1200,
         640
       ],
-      "bytes": 93653,
-      "sha256": "3d0e622237059730c02a36de3cc0a4dc0c2c177c6e7acadc633d8346d37be07f",
+      "bytes": 94928,
+      "sha256": "b77908cf584601b1d4c8d1dd812f65e5414b8846bfc9d71ec73ae8f36e6550ea",
       "used_in_email": true
     },
     {
