@@ -26,7 +26,7 @@ html=f'''<!doctype html><html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" 
 <tr><td class="preheader-view" align="center" style="padding:0 20px 16px;background:#080b10;font-size:9px;line-height:13px;color:#FFFFFF;"><a href="{{{{view_in_browser_url}}}}" style="text-decoration:underline;">View this letter in your browser</a></td></tr>
 <tr><td align="center" bgcolor="#000000" style="padding:4% 0 0;background:#000000;font-size:0;line-height:0;"><img src="assets/logo.png" alt="Loyal Primus" width="200" style="display:block;width:33.333333%;max-width:200px;height:auto;margin:0 auto;"></td></tr>
 <tr><td bgcolor="#000000" style="padding:0;background:#000000;"><h1 style="margin:0;font-size:0;line-height:0;font-weight:normal;"><img src="assets/hero-compact.jpg" alt="Trade Better, Build Brighter Future." width="600" style="width:100%;height:auto;display:block;"></h1></td></tr>
-<tr><td class="reading" bgcolor="#030609" style="padding:40px 48px 40px;background:#030609;">
+<tr><td class="reading" bgcolor="#000000" style="padding:40px 48px 40px;background:#000000;">
 <h2 class="letter-lead" style="margin:0 0 27px;font-family:Arial,Helvetica,sans-serif;font-size:30px;line-height:37px;letter-spacing:-1px;font-weight:bold;color:#FFFFFF;">A personal thank you.</h2>
 <p class="letter-copy" style="margin:0 0 21px;font-size:16px;line-height:27px;color:#FFFFFF;">{COPY['greeting']}</p>
 {paras}

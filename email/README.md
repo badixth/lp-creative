@@ -47,3 +47,4 @@ The hero is now a compact 600 × 320 banner (was 600 × 580), so the letter star
 - Removed the "From your Loyal Primus team" eyebrow above the letter heading.
 - Hero: the back end of the coin rail now fades into black (feathered radial and linear overlay in `source/hero-compact-art.html`, placed under the headline). This hides the hard rail cap and the backdrop-plane edge; the raw Blender render is unchanged.
 - Tagline spacing: headline moved down (top 64 px at 2×, about 32 px CSS) for more space below the logo, and set smaller (serif 38 px / sans 25 px CSS, previously 46 / 31).
+- Letter block is now pure black (#000000, previously #030609), and the hero bottom fade ends in the same black, so there is no seam between banner and content.
