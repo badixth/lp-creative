@@ -11,7 +11,7 @@
   },
   "native_scene_revision": "v26 rewards, v24 capacity/spreads",
   "all_three_rerendered": true,
-  "hero_unchanged": true,
+  "hero_unchanged": false,
   "inbox_client_tested": false,
   "blue_black_background_unchanged": false,
   "background_change": "Brighter upper sapphire gradient and localized glow",
@@ -22,5 +22,20 @@
   "header_logo_widths": {
     "desktop": 200,
     "mobile": 125
+  },
+  "compact_header": true,
+  "hero_css_size": [
+    600,
+    320
+  ],
+  "letter_heading_top_px": {
+    "desktop_600": {
+      "v27": 762,
+      "v28": 482
+    },
+    "mobile_375": {
+      "v27": 502,
+      "v28": 327
+    }
   }
 }

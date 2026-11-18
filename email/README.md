@@ -34,3 +34,10 @@ Rebuilt the rewards ribbon in Blender. Two continuous closed mesh bands wrap ove
 
 ## v27 header logo correction
 The header logo now uses the same original PNG as the footer, rendered separately in HTML. It is no longer baked into the compressed hero banner. Hero artwork is exported below the 60 px masthead; desktop placement is retained.
+
+## v28 compact header
+The hero is now a compact 600 × 320 banner (was 600 × 580), so the letter starts above the fold: on desktop the "A personal thank you." heading moves from 762 px to 482 px, and on mobile (375 px) from 502 px to 327 px.
+- `source/compact_hero.py` re-frames the approved `hero-polished.blend` camera to a wide shot (horizontal sensor fit 49 mm, shift 0.05 / 0.165) and renders `assets/hero-compact-background.png` at 2400 × 1280. Materials, lighting and compositor are unchanged. The re-framed scene is saved as `source/hero-compact.blend`.
+- `source/hero-compact-art.html` overlays the centered "Trade Better / Build Better Future." headline. It is exported as `assets/hero-compact.jpg` (1200 × 640, 2×).
+- Logo row padding tightened to 4% top and 0 bottom. Same blue PNG logo, rendered in HTML.
+- `assets/hero-content.jpg` (v27 tall hero) is kept for reference but no longer used.

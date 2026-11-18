@@ -24,8 +24,8 @@ html=f'''<!doctype html><html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" 
 <!--[if mso]><table role="presentation" width="600"><tr><td><![endif]-->
 <table role="presentation" class="shell" width="600" style="width:600px;max-width:600px;" bgcolor="#000102">
 <tr><td class="preheader-view" align="center" style="padding:0 20px 16px;background:#080b10;font-size:9px;line-height:13px;color:#FFFFFF;"><a href="{{{{view_in_browser_url}}}}" style="text-decoration:underline;">View this letter in your browser</a></td></tr>
-<tr><td align="center" bgcolor="#000000" style="padding:5% 0 2.333333%;background:#000000;font-size:0;line-height:0;"><img src="assets/logo.png" alt="Loyal Primus" width="200" style="display:block;width:33.333333%;max-width:200px;height:auto;margin:0 auto;"></td></tr>
-<tr><td bgcolor="#000000" style="padding:0;background:#000000;"><h1 style="margin:0;font-size:0;line-height:0;font-weight:normal;"><img src="assets/hero-content.jpg" alt="Trade Better. Build Better Future." width="600" style="width:100%;height:auto;display:block;"></h1></td></tr>
+<tr><td align="center" bgcolor="#000000" style="padding:4% 0 0;background:#000000;font-size:0;line-height:0;"><img src="assets/logo.png" alt="Loyal Primus" width="200" style="display:block;width:33.333333%;max-width:200px;height:auto;margin:0 auto;"></td></tr>
+<tr><td bgcolor="#000000" style="padding:0;background:#000000;"><h1 style="margin:0;font-size:0;line-height:0;font-weight:normal;"><img src="assets/hero-compact.jpg" alt="Trade Better. Build Better Future." width="600" style="width:100%;height:auto;display:block;"></h1></td></tr>
 <tr><td class="reading" bgcolor="#030609" style="padding:40px 48px 40px;background:#030609;">
 <p style="font-size:10px;line-height:14px;letter-spacing:1.7px;color:#FFFFFF;">FROM YOUR LOYAL PRIMUS TEAM</p>
 <h2 class="letter-lead" style="margin:15px 0 27px;font-family:Arial,Helvetica,sans-serif;font-size:30px;line-height:37px;letter-spacing:-1px;font-weight:bold;color:#FFFFFF;">A personal thank you.</h2>
@@ -62,6 +62,6 @@ section_end=html.index('<tr><td height="3"',section_start)
 preview=html.replace('{{first_name}}','Alex').replace('{{view_in_browser_url}}','email-preview.html').replace('{{preferences_url}}','#delivery-settings').replace('{{unsubscribe_url}}','#delivery-settings').replace('{{sender_postal_address}}','Loyal Primus · Client communications')
 preview=preview.replace('</body>','''<script>function report(){parent.postMessage({type:'email-height',height:document.documentElement.scrollHeight},'*')}addEventListener('load',report);new ResizeObserver(report).observe(document.body);document.querySelectorAll('a[href="#delivery-settings"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();parent.postMessage({type:'delivery-note'},'*')}));</script></body>''')
 (O/'email-preview.html').write_text(preview)
-wrapper=(O/'preview.html').read_text().replace('Full email · layout preview v1','Trade Better · refined v3').replace('position:sticky;top:0','position:relative;top:0').replace('Design preview with live copy and links. Delivery fields are reserved for your email platform.','Sample personal letter for existing clients. Body copy, greeting and sign-off are editable. Delivery fields are reserved for your email platform.')
+wrapper=(O/'preview.html').read_text().replace('Full email · layout preview v1','Trade Better · refined v3').replace('position:sticky;top:0','position:relative;top:0').replace('Dark edition · complete gift ribbon','Dark edition · compact header').replace('Design preview with live copy and links. Delivery fields are reserved for your email platform.','Sample personal letter for existing clients. Body copy, greeting and sign-off are editable. Delivery fields are reserved for your email platform.')
 (O/'preview.html').write_text(wrapper)
-print('V27 built',len(html.encode()),'bytes')
+print('V28 built',len(html.encode()),'bytes')
