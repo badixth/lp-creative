@@ -1,0 +1,26 @@
+{
+  "desktop": {
+    "width": 600,
+    "document_width": 600,
+    "images_loaded": true
+  },
+  "mobile": {
+    "width": 375,
+    "document_width": 375,
+    "images_loaded": true
+  },
+  "native_scene_revision": "v26 rewards, v24 capacity/spreads",
+  "all_three_rerendered": true,
+  "hero_unchanged": true,
+  "inbox_client_tested": false,
+  "blue_black_background_unchanged": false,
+  "background_change": "Brighter upper sapphire gradient and localized glow",
+  "location_line_removed": true,
+  "ribbon_continuous_bands": 2,
+  "header_footer_same_logo": true,
+  "logo_solid_color": "#1D9BF0",
+  "header_logo_widths": {
+    "desktop": 200,
+    "mobile": 125
+  }
+}

@@ -1,0 +1,311 @@
+@font-face{font-family:Inter;src:url('assets/inter.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:GeistMono;src:url('assets/geist-mono.woff2') format('woff2');font-weight:100 900;font-display:swap}
+:root{color-scheme:dark;--ink:#090d12;--text:#edf2f7;--muted:#9da9b6;--accent:#64cbff;--pad:clamp(32px,5vw,96px);font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--ink)}
+*{box-sizing:border-box}
+body,p,h1{margin:0}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:.22em}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.page{position:relative;isolation:isolate;min-height:max(660px,100svh);display:grid;grid-template-columns:56% 44%;padding-block:108px 68px;align-items:center}
+.art{position:absolute;z-index:-1;inset:0 auto 0 0;width:74%;overflow:hidden;background:var(--ink);mask-image:linear-gradient(90deg,#000 0%,#000 41%,rgba(0,0,0,.95) 52%,rgba(0,0,0,.70) 65%,rgba(0,0,0,.26) 82%,transparent 100%)}
+.art video{width:100%;height:100%;object-fit:cover;object-position:44% 50%;display:block}
+.art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,16,.22),transparent 28%,transparent 55%,rgba(4,8,14,.24) 78%,rgba(4,8,14,.54))}
+header{position:absolute;top:clamp(28px,5vh,54px);left:var(--pad);right:var(--pad);display:flex;justify-content:space-between;align-items:center}
+.brand{display:inline-flex;align-items:center;min-height:32px}.brand img{width:clamp(166px,14.6vw,242px);height:auto}.website{font-size:12px;color:#bdc8d3;display:inline-flex;align-items:center;gap:9px}.website span{font-size:16px}
+.identity{align-self:end;padding-left:var(--pad);z-index:1}
+.headline{font-weight:505;font-size:clamp(39px,3.85vw,76px);line-height:1.035;letter-spacing:-.057em;text-wrap:balance}
+.headline span{display:block;color:var(--accent)}
+.credentials{display:flex;align-items:center;gap:clamp(14px,1.6vw,27px);margin-top:clamp(23px,3.2vh,38px)}
+.credentials img{display:block;height:clamp(54px,4.3vw,76px);width:auto;object-fit:contain;filter:brightness(1.36) saturate(.85)}.credentials i{height:27px;width:1px;background:#33414d}
+.access{width:min(100%,406px);justify-self:center;padding:0;position:relative;left:-1vw}
+.secure{display:flex;align-items:center;gap:9px;color:#93a6b6;text-transform:uppercase;font:500 10px/1.4 GeistMono,monospace;letter-spacing:.13em}
+.lock{position:relative;width:10px;height:8px;border:1.2px solid #83b7ce;border-radius:2px;display:inline-block;margin:3px 0 0 1px}.lock:before{content:"";position:absolute;left:1px;top:-6px;width:4px;height:5px;border:1.2px solid #83b7ce;border-bottom:0;border-radius:4px 4px 0 0}
+h1{font-size:clamp(40px,3.45vw,55px);line-height:1.05;letter-spacing:-.06em;font-weight:520;margin:16px 0 9px}.intro{font-size:15px;color:var(--muted);line-height:1.5}
+form{margin-top:32px}form label{font-size:13px;font-weight:510}.label-line{display:flex;align-items:center;justify-content:space-between;margin:20px 0 0;gap:8px}
+.label-line a,.register a,.status a{font-size:13px;color:var(--accent);font-weight:500}
+.register{margin-top:25px;border-top:1px solid #28303a;padding-top:21px;color:var(--muted);font-size:13px;line-height:1.6}.register a{margin-left:4px}
+.status{font-size:13px;line-height:1.5;margin-top:12px;color:#becad5}
+.page{background:radial-gradient(ellipse at 84% 42%,#1d2b3982,transparent 41%),radial-gradient(ellipse at 100% 95%,#19223770,transparent 40%);z-index:0}
+.art{width:72%}.headline{font-weight:490}.headline span{color:#91dcff}
+.nav-glass{border-radius:999px;--lg-glass:rgba(92,110,128,.13)}.website{padding:9px 15px;color:#d7dee6}.website svg,.register svg{width:13px;height:13px}
+.lg-button.motion{position:absolute;bottom:68px;left:calc(53% - 40px);width:40px;height:40px;color:#d3dce5;--lg-glass:rgba(70,80,94,.32)}
+.secure svg{width:14px;height:14px;color:#a9c8db}.secure{letter-spacing:.12em}
+.access{--lg-foreground:#f0f5fa;--lg-muted:#a8b4c3;--lg-edge:rgba(207,228,247,.19);--lg-glass:rgba(7,12,19,.88);--lg-glass-active:rgba(13,21,31,.96);--lg-on:#228dd2;--lg-rim-shine:.65}
+.field.lg-input{max-width:none;margin-top:9px;height:52px;border-radius:20px;padding:0 18px;gap:12px;background-image:var(--lg-rim,none),linear-gradient(145deg,#d7ebff0d,transparent 52%,#d7ebff04)}
+.field.lg-input:focus-within{outline:2px solid #79c9f7;outline-offset:2px}
+.field.lg-input input{font-family:inherit;font-size:15px;outline:none}
+.password{position:relative}.password .field{padding-right:52px}
+.reveal{position:absolute;right:6px;top:5px;width:42px;height:42px;display:grid;place-items:center;border:0;background:none;color:#b4c2cc;border-radius:50%}.reveal:hover{background:#d7ebff10}
+.remember{display:flex;align-items:center;justify-content:space-between;margin:20px 2px 23px;color:#c9d2dc}.remember label{cursor:pointer;font-weight:400}
+.lg-switch{--lg-scale:.31}
+.lg-button.submit{width:100%;height:52px;gap:11px;border-radius:24px;font-size:15px;font-weight:590;letter-spacing:-.01em;background-image:var(--lg-rim,none),linear-gradient(168deg,#b3edff3d,transparent 60%,#02345229)}
+.register{text-align:center}.register a{display:inline-flex;align-items:center;gap:3px}.motion svg{width:17px;height:17px}
+@media(prefers-reduced-motion:reduce){.access *,.motion{transition-duration:0s!important;animation-duration:0s!important}}
+@media(max-width:1080px) and (min-width:761px){.page{grid-template-columns:52% 48%}.access{width:calc(100% - 64px);max-width:406px;left:0}.lg-button.motion{left:calc(50% - 45px)}}
+@media(max-width:760px){
+ :root{--pad:clamp(22px,6vw,40px)}.page{min-height:100svh;display:flex;flex-direction:column;align-items:stretch;padding:0 0 max(28px,env(safe-area-inset-bottom));--hero-h:clamp(235px,33svh,320px)}
+ header{top:19px;z-index:2}.brand img{width:157px}.website{font-size:11px;gap:5px;padding:7px 10px}
+ .art{width:100%;height:calc(var(--hero-h) + 58px);mask-image:linear-gradient(#000 0%,#000 44%,#000c 65%,transparent 100%)}.art video{object-position:50% 45%}.art:after{background:linear-gradient(90deg,#060b1394,transparent 80%)}
+ .identity{display:contents}.headline{margin:0 var(--pad);height:var(--hero-h);padding-bottom:18px;display:flex;flex-direction:column;justify-content:flex-end;font-size:clamp(31px,7.6vw,43px);line-height:1.05;letter-spacing:-.047em}
+ .lg-button.motion{bottom:auto;left:auto;right:var(--pad);top:calc(var(--hero-h) - 53px);width:32px;height:32px}
+ .access{width:min(100% - var(--pad)*2,480px);align-self:center;left:0;margin-top:17px}.secure{font-size:9px}h1{font-size:36px;margin:10px 0 6px}.intro{font-size:14px}
+ form{margin-top:23px}.register{margin:21px 0 0;padding-top:16px}.credentials{order:3;justify-content:center;width:100%;margin:29px auto 0;gap:18px}.credentials img{height:48px}.credentials i{height:21px}
+}
+@media(max-width:360px){.website{font-size:10px}.brand img{width:140px}.headline{font-size:29px}.lg-button.motion{top:70px}}
+
+/* Theme control and opaque form surfaces. Artwork keeps its original grade. */
+.header-actions{display:flex;align-items:center;gap:10px}
+.lg-button.theme-toggle{width:38px;height:38px;min-width:38px;border-radius:50%;color:#d7dee6;--lg-glass:rgba(92,110,128,.18)}
+.field.lg-input{background-color:var(--lg-glass);box-shadow:inset 0 1px 3px #0003,0 1px 0 #ffffff06}
+:root[data-theme="light"]{color-scheme:light;--ink:#eff3f7;--text:#172535;--muted:#5b697a;--accent:#086daa}
+[data-theme="light"] .page{background:radial-gradient(ellipse at 84% 42%,#ffffffd9,transparent 55%)}
+[data-theme="light"] .access{--lg-foreground:#172535;--lg-muted:#5b697a;--lg-edge:rgba(55,75,98,.22);--lg-glass:rgba(222,230,239,.94);--lg-glass-active:rgba(212,224,237,.98);--lg-rim-shine:.35}
+[data-theme="light"] .field.lg-input{box-shadow:inset 0 1px 3px #23395212,0 1px 0 #fff9}
+[data-theme="light"] .remember,[data-theme="light"] .reveal,[data-theme="light"] .status{color:#40536a}
+[data-theme="light"] .register{border-color:#cbd5df}
+[data-theme="light"] .nav-glass,[data-theme="light"] .theme-toggle{--lg-glass:rgba(222,230,239,.86);--lg-edge:rgba(55,75,98,.2);color:#22364b}
+[data-theme="light"] .website{color:#22364b}
+.headline{color:#edf2f7}
+[data-theme="light"] .credentials img{filter:none}
+@media(min-width:761px){[data-theme="light"] .art{mask-image:linear-gradient(90deg,#000 0%,#000 46%,#000e 60%,#0005 82%,transparent 100%)}}
+@media(max-width:760px){
+ .header-actions{gap:6px}.lg-button.theme-toggle{width:34px;height:34px;min-width:34px}.brand img{width:145px}
+ [data-theme="light"] .headline{color:#172535}[data-theme="light"] .headline span{color:#086daa}
+ .credentials{gap:16px}.credentials i{height:32px}
+}
+@media(max-width:380px){.credentials img{height:43px}.credentials{gap:12px}.brand img{width:126px}.website{padding:7px 8px}}
+
+@media(max-width:760px){[data-theme="light"] .art{mask-image:linear-gradient(#000 0%,#000 30%,#0004 50%,transparent 68%)}}
+@media(min-width:761px){[data-theme="light"] .credentials img{filter:brightness(1.36) saturate(.85)}}
+
+/* Exact blue sampled from the supplied Loyal Primus logo. */
+:root,:root[data-theme="light"]{--accent:#1d9bf0}
+.headline span,[data-theme="light"] .headline span{color:var(--accent)}
+.access,[data-theme="light"] .access{--lg-on:#1d9bf0}
+.field.lg-input:focus-within{outline-color:var(--accent)}
+.lg-button.submit{background-image:var(--lg-rim,none),linear-gradient(168deg,#ffffff0a,transparent 60%,#001c3208)}
+
+/* Pearl and smoked glass: neutral tint, directional sheen and a quiet rim. */
+:root[data-theme="light"]{--ink:#f1f2f4;--text:#20242a;--muted:#626975}
+.field.lg-input{--lg-blur:22px;--lg-filter:saturate(1.12);--lg-rim-shine:.32;height:54px;border-radius:18px;background-image:var(--lg-rim,none),linear-gradient(165deg,#ffffff0d,transparent 47%,#ffffff03);box-shadow:inset 0 1px 0 #ffffff14,inset 0 -1px 0 #0005,0 5px 16px #00000012;transition:background-color .25s ease,box-shadow .25s ease,outline-color .25s ease}
+.field.lg-input:focus-within{outline:1.5px solid var(--accent);outline-offset:3px;box-shadow:inset 0 1px 0 #ffffff2b,0 0 0 5px #1d9bf00d,0 6px 18px #00000012}
+[data-theme="light"] .access{--lg-foreground:#252a31;--lg-muted:#69717d;--lg-glass:rgba(247,248,250,.68);--lg-glass-active:rgba(255,255,255,.84);--lg-edge:rgba(110,121,137,.2);--lg-rim-shine:.44}
+[data-theme="light"] .field.lg-input{background-image:var(--lg-rim,none),linear-gradient(165deg,#ffffffb8,#ffffff38 42%,#bcc4cf16);box-shadow:inset 0 1px 0 #ffffffed,inset 0 -1px 0 #929baa20,0 0 0 .5px #8c98a829,0 4px 12px #22324a0a,0 12px 26px #22324a05}
+[data-theme="light"] .field.lg-input:focus-within{background-color:rgba(255,255,255,.82);box-shadow:inset 0 1px 0 #fff,0 0 0 5px #1d9bf00c,0 6px 18px #22324a0b}
+[data-theme="light"] .remember,[data-theme="light"] .reveal{color:#5d6570}
+[data-theme="light"] .page{background:radial-gradient(ellipse at 88% 33%,#ffffffdd,transparent 62%)}
+.lg-button.submit{box-shadow:inset 0 1px 0 #ffffff52,inset 0 -1px 0 #004d7b25,0 5px 15px #1d9bf020}
+.reveal{top:6px}
+
+/* A broad curved dissolve avoids a visible vertical overlay boundary. */
+@media(min-width:761px){
+ .art,[data-theme="light"] .art{width:82%;mask-image:radial-gradient(ellipse 112% 160% at -12% 64%,#000 0%,#000 34%,rgba(0,0,0,.988) 40%,rgba(0,0,0,.929) 46%,rgba(0,0,0,.839) 52%,rgba(0,0,0,.710) 58%,rgba(0,0,0,.541) 64%,rgba(0,0,0,.369) 70%,rgba(0,0,0,.212) 76%,rgba(0,0,0,.098) 82%,rgba(0,0,0,.031) 88%,rgba(0,0,0,.004) 94%,transparent 100%)}
+}
+
+/* Day refinement: retain opaque metal until the form-side feather. */
+@media(min-width:761px){
+ [data-theme="light"] .art{mask-image:radial-gradient(ellipse 112% 160% at -12% 64%,#000 0%,#000 48%,rgba(0,0,0,.98) 56%,rgba(0,0,0,.92) 62%,rgba(0,0,0,.73) 68%,rgba(0,0,0,.44) 74%,rgba(0,0,0,.18) 80%,rgba(0,0,0,.04) 86%,rgba(0,0,0,.003) 92%,transparent 100%)}
+}
+@media(max-width:760px){
+ [data-theme="light"] .art{mask-image:linear-gradient(#000 0%,#000 68%,rgba(0,0,0,.97) 74%,rgba(0,0,0,.82) 80%,rgba(0,0,0,.5) 86%,rgba(0,0,0,.18) 92%,transparent 100%)}
+ [data-theme="light"] .headline{color:#edf2f7;text-shadow:0 2px 16px #0006}
+ [data-theme="light"] .access{margin-top:55px}
+ [data-theme="light"] .art:after{background:linear-gradient(180deg,#060b1320,transparent 32%,#060b1366 78%,#060b1330)}
+}
+
+@media(min-width:761px) and (max-width:1080px){[data-theme="light"] .art{width:74%}}
+
+/* A longer, eased tail keeps the hero opaque while softening the form edge. */
+@media(min-width:761px){
+ [data-theme="light"] .art{mask-image:radial-gradient(ellipse 112% 160% at -12% 64%,#000 0%,#000 48%,rgba(0,0,0,.98) 56%,rgba(0,0,0,.92) 62%,rgba(0,0,0,.77) 68%,rgba(0,0,0,.55) 74%,rgba(0,0,0,.31) 80%,rgba(0,0,0,.13) 86%,rgba(0,0,0,.032) 92%,rgba(0,0,0,.004) 97%,transparent 100%)}
+}
+/* One shared mobile column for identity, heading, form and credentials. */
+@media(max-width:760px){
+ .page{--content-width:min(calc(100% - var(--pad)*2),480px)}
+ header{width:var(--content-width);left:50%;right:auto;transform:translateX(-50%)}
+ .headline{width:var(--content-width);margin-inline:auto;padding-bottom:24px}
+ .access{width:var(--content-width)}
+ .credentials{width:var(--content-width);justify-content:flex-start;margin:30px auto 0;gap:20px}
+ .credentials img{height:48px;max-width:calc((100% - 41px)/2);object-fit:contain;object-position:left center}
+ .lg-button.motion{right:max(var(--pad),calc((100% - 480px)/2));top:calc(var(--hero-h) - 59px)}
+ [data-theme="light"] .art{height:calc(var(--hero-h) + 80px);mask-image:linear-gradient(#000 0%,#000 60%,rgba(0,0,0,.98) 66%,rgba(0,0,0,.90) 72%,rgba(0,0,0,.72) 78%,rgba(0,0,0,.45) 84%,rgba(0,0,0,.20) 90%,rgba(0,0,0,.045) 96%,transparent 100%)}
+ [data-theme="light"] .access{margin-top:65px}
+}
+@media(max-width:380px){.credentials{gap:16px}.credentials img{height:44px}}
+
+/* Compact mobile composition: identical geometry in both themes. */
+@media(max-width:760px){
+ .headline{text-align:center;align-items:center;padding-bottom:22px;font-size:clamp(29px,7.4vw,42px);line-height:1.08}
+ .access,[data-theme="light"] .access{margin-top:22px}
+ .access h1,.access .intro{text-align:center}
+ .access h1{margin-top:10px}
+ .credentials{justify-content:center;margin-top:27px}
+ .art,[data-theme="light"] .art{height:calc(var(--hero-h) + 24px);mask-image:linear-gradient(#000 0%,#000 74%,rgba(0,0,0,.98) 80%,rgba(0,0,0,.87) 85%,rgba(0,0,0,.57) 90%,rgba(0,0,0,.20) 95%,transparent 100%)}
+ .art:after,[data-theme="light"] .art:after{background:linear-gradient(180deg,#060b1329,transparent 30%,#060b1320 58%,#060b13a6 85%,#060b1380)}
+ .lg-button.motion{top:75px;right:max(var(--pad),calc((100% - 480px)/2))}
+ .headline,[data-theme="light"] .headline{color:#edf2f7;text-shadow:0 2px 16px #0006}
+ .headline span,[data-theme="light"] .headline span{color:var(--accent)}
+}
+
+/* Replace the muddy mobile dissolve with a softly feathered shallow curve. */
+@media(max-width:760px){
+ [data-theme="light"] .art{mask-image:radial-gradient(ellipse 150% 100% at 50% 0%,#000 0%,#000 97.5%,rgba(0,0,0,.92) 98%,rgba(0,0,0,.5) 99%,rgba(0,0,0,.08) 99.7%,transparent 100%)}
+ [data-theme="light"] .art:after{background:linear-gradient(180deg,#060b1329,transparent 32%,#060b1320 58%,#060b1380 92%)}
+}
+
+/* Balanced breathing room below the mobile artwork, shared by both themes. */
+@media(max-width:760px){
+ .access,[data-theme="light"] .access{margin-top:clamp(42px,6vw,48px)}
+ .page{padding-bottom:max(40px,env(safe-area-inset-bottom))}
+}
+
+/* Native Glisse Input treatment, verified against the live reference. */
+.access .reference-field{
+ max-width:none;margin-top:9px;height:56px;padding:0 20px;gap:12px;border-radius:28px;
+ --lg-foreground:rgb(255 255 255);--lg-muted:rgb(235 235 245 / .6);
+ --lg-glass:rgb(40 40 40 / .62);--lg-glass-active:rgb(70 70 70 / .62);
+ --lg-edge:rgb(255 255 255 / .08);--lg-drop:transparent;
+ --lg-blur:3px;--lg-filter:saturate(1.5);--lg-rim-shine:.13;
+}
+[data-theme="light"] .access .reference-field{
+ --lg-foreground:rgb(0 0 0 / .88);--lg-muted:rgb(60 60 67 / .6);
+ --lg-glass:rgb(255 255 255 / .6);--lg-glass-active:rgb(236 236 240 / .85);
+ --lg-edge:rgb(0 0 0 / .08);--lg-drop:rgb(0 0 0 / .06);--lg-rim-shine:.3;
+}
+.access .reference-field input{outline:none;caret-color:var(--accent);font-size:16px}
+.access .reference-field .lg-input-icon{width:18px;height:18px}
+.password .reference-field{padding-right:58px}
+.password .reveal{width:44px;height:44px;top:6px;right:8px;color:rgb(235 235 245 / .6)}
+[data-theme="light"] .password .reveal{color:rgb(60 60 67 / .6)}
+
+/* Neutral obsidian surroundings; native Glisse input materials stay intact. */
+:root[data-theme="dark"]{--ink:#080808;--text:#f2f2f2;--muted:#a5a5aa}
+[data-theme="dark"] .page{background:radial-gradient(ellipse at 84% 42%,#17171785,transparent 48%),radial-gradient(ellipse at 100% 95%,#14141466,transparent 42%)}
+[data-theme="dark"] .art:after{background:linear-gradient(180deg,#08080838,transparent 28%,transparent 55%,#0808083d 78%,#0808088a)}
+[data-theme="dark"] .nav-glass,[data-theme="dark"] .theme-toggle{--lg-glass:rgba(54,54,54,.38);--lg-edge:rgba(255,255,255,.13);color:#dedede}
+[data-theme="dark"] .website,[data-theme="dark"] .remember{color:#ceced2}
+[data-theme="dark"] .register{border-color:#2c2c2e}
+[data-theme="dark"] .credentials i{background:#3b3b3d}
+[data-theme="dark"] .lg-button.motion{--lg-glass:rgba(50,50,50,.48);color:#dedede}
+@media(max-width:760px){[data-theme="dark"] .art:after{background:linear-gradient(180deg,#08080829,transparent 30%,#08080820 58%,#080808a6 85%,#08080880)}}
+
+/* Day overlays use pearl light around copy, leaving the central metal unfiltered. */
+[data-theme="light"] .art:after{background:linear-gradient(180deg,#fff 0%,#fffffff5 10%,#ffffff85 19%,transparent 31%,transparent 52%,#ffffffaa 64%,#fffffff5 74%,#fff 100%)}
+[data-theme="light"] .headline{color:#15171a;text-shadow:none}
+[data-theme="light"] .headline span{color:var(--accent);font-weight:560}
+[data-theme="light"] .credentials img{filter:brightness(.76) saturate(1.05)}
+[data-theme="light"] .credentials i{background:#b6bec5}
+[data-theme="light"] .lg-button.motion{--lg-glass:rgba(255,255,255,.72);--lg-edge:rgba(0,0,0,.14);color:#353b42}
+[data-theme="light"] .label-line a,[data-theme="light"] .register a,[data-theme="light"] .status a{color:var(--accent)}
+.lg-button.submit,[data-theme="light"] .lg-button.submit{color:#fff}
+@media(max-width:760px){
+ [data-theme="light"] .art{mask-image:linear-gradient(#000 calc(100% - 2px),transparent 100%)}
+ [data-theme="light"] .art:after{background:linear-gradient(180deg,#fff 0%,#fffffff5 17%,#ffffff60 30%,transparent 40%,transparent 50%,#ffffffcc 64%,#fff 71%,#fff 100%)}
+ [data-theme="light"] .headline{color:#15171a;text-shadow:none}
+}
+
+@media(max-width:760px){
+ [data-theme="light"] .page{background:none}
+ [data-theme="light"] .art:after{background:linear-gradient(180deg,#fff 0%,#fffffff5 17%,#ffffff60 30%,transparent 40%,transparent 50%,#ffffffcc 64%,#fff 71%,#fff 82%,#f1f2f4 100%)}
+}
+
+/* Local light pockets protect identity; the artwork stays clear between them. */
+@media(min-width:761px){
+ [data-theme="light"] .art:after{background:linear-gradient(173deg,rgba(248,249,250,.97),rgba(248,249,250,.94) 88px,rgba(248,249,250,.55) 120px,rgba(248,249,250,.12) 150px,transparent 185px)}
+ [data-theme="light"] .identity{position:relative;isolation:isolate}
+ [data-theme="light"] .identity:before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:-92px -110px -68px 0;background:linear-gradient(180deg,transparent,rgba(248,249,250,.12) 24px,rgba(248,249,250,.58) 57px,rgba(248,249,250,.92) 94px,rgba(248,249,250,.97) 140px,#f1f2f4 100%);mask-image:linear-gradient(90deg,#000 0%,#000 56%,rgba(0,0,0,.88) 68%,rgba(0,0,0,.4) 84%,transparent 100%)}
+}
+@media(max-width:760px){
+ [data-theme="light"] .art:after{background:linear-gradient(180deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.90) 18%,rgba(255,255,255,.18) 27%,transparent 33%,transparent 54%,rgba(248,249,250,.26) 60%,rgba(248,249,250,.94) 69%,#f1f2f4 84%,#f1f2f4 100%)}
+}
+
+/* Day studio plate needs only a quiet copy feather. No light layer over the keys. */
+[data-theme="light"] .art:after{background:none}
+[data-theme="light"] .identity:before{inset:-48px -80px -68px 0;background:linear-gradient(180deg,transparent,rgba(248,249,250,.88) 48px,rgba(248,249,250,.94) 100px,#f1f2f4 100%);mask-image:linear-gradient(90deg,#000 0%,#000 55%,#000b 78%,transparent)}
+[data-theme="light"] .brand{position:relative;isolation:isolate}
+@media(min-width:761px){[data-theme="light"] .art{mask-image:linear-gradient(90deg,#000 0%,#000 40%,#000e 50%,#000a 60%,#0004 70%,#0001 80%,transparent 92%)}}
+@media(max-width:760px){
+ [data-theme="light"] .art:after{background:linear-gradient(180deg,transparent 0%,transparent 55%,rgba(248,249,250,.72) 64%,rgba(248,249,250,.94) 73%,#f1f2f4 88%,#f1f2f4 100%)}
+ [data-theme="light"] .identity:before{display:none}
+}
+
+/* Keep the motion control above the identity copy hit area. */
+.lg-button.motion{z-index:3}
+
+/* Each edition is a complete composition, so changing theme only fades pixels. */
+.page,[data-theme="dark"] .page,[data-theme="light"] .page{background:none}
+.scene-layer{position:absolute;inset:0;z-index:-1;isolation:isolate;pointer-events:none;overflow:hidden}
+.scene-layer--dark{background:radial-gradient(ellipse at 84% 42%,#17171785,transparent 48%),radial-gradient(ellipse at 100% 95%,#14141466,transparent 42%),#080808}
+.scene-layer--light{background:#f1f2f4;opacity:0;transition:opacity 760ms cubic-bezier(.4,0,.2,1);will-change:opacity}
+.scene-layer--light[data-visible="true"]{opacity:1}
+.scene-layer .art{z-index:0;background:transparent;width:82%}
+.scene-layer--dark .art{mask-image:radial-gradient(ellipse 112% 160% at -12% 64%,#000 0%,#000 34%,#000000fc 40%,#000000ed 46%,#000000d6 52%,#000000b5 58%,#0000008a 64%,#0000005e 70%,#00000036 76%,#00000019 82%,#00000008 88%,#00000001 94%,transparent 100%)}
+.scene-layer--dark .art:after{background:linear-gradient(180deg,#08080838,transparent 28%,transparent 55%,#0808083d 78%,#0808088a)}
+/* Keep more of the silver intact; finish the feather before the form text. */
+.scene-layer--light .art{mask-image:linear-gradient(90deg,#000 0%,#000 47%,#000f 55%,#000b 63%,#0004 73%,#0001 82%,transparent 94%)}
+.scene-layer--light .art:after{background:none}
+.identity{position:relative;isolation:isolate}
+.identity:before,[data-theme="light"] .identity:before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:-76px -60px -68px -72px;background:linear-gradient(180deg,rgba(248,249,250,0) 0px,rgba(248,249,250,.06) 24px,rgba(248,249,250,.22) 48px,rgba(248,249,250,.46) 76px,rgba(248,249,250,.63) 112px,rgba(248,249,250,.72) 164px,rgba(241,242,244,.82) 100%);mask-image:linear-gradient(90deg,#000 0%,#000 51%,#000b 73%,transparent 96%);filter:blur(12px);opacity:0;transition:opacity 760ms cubic-bezier(.4,0,.2,1)}
+[data-theme="light"] .identity:before{opacity:1}
+.brand{position:relative;isolation:isolate}
+:root{transition:background-color 760ms ease,color 760ms ease}
+.headline,.headline span,.intro,.remember,.register,.website,.label-line a,.register a,.status,.credentials i{transition:color 760ms ease,border-color 760ms ease,background-color 760ms ease,font-weight 760ms ease}
+.credentials img{transition:filter 760ms ease}
+@media(max-width:760px){
+ .scene-layer .art{width:100%;height:calc(var(--hero-h) + 24px)}
+ .scene-layer--dark .art{mask-image:linear-gradient(#000 0%,#000 74%,#000000fa 80%,#000000de 85%,#00000091 90%,#00000033 95%,transparent 100%)}
+ .scene-layer--dark .art:after{background:linear-gradient(180deg,#08080829,transparent 30%,#08080820 58%,#080808a6 85%,#08080880)}
+ .scene-layer--light .art{mask-image:linear-gradient(#000 calc(100% - 2px),transparent 100%)}
+ .scene-layer--light .art:after{background:linear-gradient(180deg,transparent 0%,transparent 48%,rgba(248,249,250,.08) 56%,rgba(248,249,250,.27) 64%,rgba(246,247,249,.51) 72%,rgba(244,245,247,.72) 80%,rgba(241,242,244,.90) 90%,#f1f2f4 100%)}
+ .identity:before,[data-theme="light"] .identity:before{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ :root,.scene-layer--light,.identity:before,.brand:before,.headline,.headline span,.intro,.remember,.register,.website,.label-line a,.register a,.status,.credentials i,.credentials img{transition:none!important}
+}
+
+/* Switch ink near the midpoint rather than fading through unreadable mid-grey. */
+:root{transition:background-color 760ms ease,color 0s linear 320ms}
+.headline,.intro,.remember,.register,.website,.label-line a,.register a,.status{transition:color 0s linear 320ms,border-color 760ms ease,font-weight 760ms ease}
+
+.identity:before{transition-timing-function:cubic-bezier(.4,0,.2,1)}
+
+/* Logo contrast follows its silhouette; no white backing over the artwork. */
+.brand img{filter:drop-shadow(0 .7px .6px rgba(0,0,0,.42)) drop-shadow(0 2px 4px rgba(0,0,0,.16))}
+
+/* Give the mobile wordmark a clearer presence without a background plate. */
+@media(max-width:760px){
+ header{gap:12px}
+ .brand{flex:none}
+ .brand img{width:clamp(156px,46vw,200px)}
+ .header-actions{flex:none}
+}
+@media(max-width:350px){
+ header{gap:8px}
+ .brand img{width:150px}
+ .website{font-size:10px;padding:7px 6px}
+ .website svg{display:none}
+}
+
+/* Let the larger mobile logo breathe without compressing its proportions. */
+@media(max-width:760px){
+ header{width:min(calc(100% - 32px),480px);gap:24px}
+}
+@media(min-width:351px) and (max-width:430px){
+ .website{font-size:10.5px;padding:7px}
+}
+
+/* Neutral clear glass: untinted fill and defined refracted edges. */
+[data-theme="light"] .access .reference-field{
+ --lg-foreground:#252525;--lg-muted:#606064;
+ --lg-glass:rgba(255,255,255,.18);--lg-glass-active:rgba(255,255,255,.36);
+ --lg-edge:rgba(50,50,50,.18);--lg-rim-shine:.52;
+ --lg-blur:8px;--lg-filter:saturate(1);
+ background-image:var(--lg-rim,none),linear-gradient(155deg,rgba(255,255,255,.32),rgba(255,255,255,.04) 42%,rgba(255,255,255,.10));
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(50,50,50,.17),0 3px 10px rgba(0,0,0,.04);
+ transition:background-color 200ms ease,box-shadow 200ms ease;
+}
+@media(hover:hover) and (pointer:fine){
+ [data-theme="light"] .access .reference-field:hover{background-color:rgba(255,255,255,.28)}
+}
+[data-theme="light"] .access .reference-field:focus-within{
+ background-color:var(--lg-glass-active);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 0 0 1px rgba(50,50,50,.30),0 0 0 3px rgba(0,0,0,.035),0 4px 14px rgba(0,0,0,.05);
+}
+[data-theme="light"] .password .reveal{color:#606064}

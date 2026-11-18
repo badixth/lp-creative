@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "esbuild": "^0.25.12",
+    "glisse": "^0.6.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "name": "loyal-primus-glass-login",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/portal.jsx --bundle --minify --outfile=login.js"
+  }
+}

@@ -1,0 +1,18 @@
+Hi {{first_name}},
+
+Thank you for making Loyal Primus part of your trading journey. We wanted to take a moment to tell you how much we appreciate the trust you place in us.
+
+Every client approaches the markets differently. Whether you’re reviewing your account, exploring its features or looking for an answer, we want the information you receive from us to be clear and useful.
+
+If there’s something you’d like to discuss, we’re here to help. Visit your client area for your account information, or get in touch with our team. We’d be glad to hear from you.
+
+Warm regards,
+Your Loyal Primus team
+
+Visit your client area: https://client.loyalprimusmarkets.com/
+
+Support: https://loyalprimusmarkets.com/contact-us/
+
+Leveraged trading involves risk and can result in significant losses.
+Unsubscribe: {{unsubscribe_url}}
+{{sender_postal_address}}

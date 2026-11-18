@@ -1,0 +1,9 @@
+node_modules
+login/src
+login/package.json
+login/package-lock.json
+login/serve.py
+email/source
+email/assets/*.png
+!email/assets/logo.png
+*.blend

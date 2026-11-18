@@ -1,0 +1,16 @@
+{
+  "subject": "A personal note from your Loyal Primus team",
+  "preheader": "Thank you for being part of Loyal Primus. A few words from our team to you.",
+  "greeting": "Hi {{first_name}},",
+  "paragraphs": [
+    "Thank you for making Loyal Primus part of your trading journey. We wanted to take a moment to tell you how much we appreciate the trust you place in us.",
+    "Every client approaches the markets differently. Whether you’re reviewing your account, exploring its features or looking for an answer, we want the information you receive from us to be clear and useful.",
+    "If there’s something you’d like to discuss, we’re here to help. Visit your client area for your account information, or get in touch with our team. We’d be glad to hear from you."
+  ],
+  "signoff": "Warm regards,",
+  "sender": "Your Loyal Primus team",
+  "cta": "Visit your client area",
+  "cta_url": "https://client.loyalprimusmarkets.com/",
+  "status": "Sample personal-message copy for layout review; replace with the real client message.",
+  "preview_first_name": "Alex (fictional preview name)"
+}

@@ -1,0 +1,107 @@
+{
+  "version": "v27",
+  "native_rerenders": 0,
+  "revision": "original blue PNG logo rendered separately in header",
+  "assets": [
+    {
+      "file": "assets/capacity-platform.png",
+      "dimensions": [
+        2400,
+        1483
+      ],
+      "bytes": 2725319,
+      "sha256": "5b8e1fa90cd1a5a1b386cdf4093c5f90bf7d7c890b1a85421793139c92837483",
+      "used_in_email": false
+    },
+    {
+      "file": "assets/feature-bottom-right.jpg",
+      "dimensions": [
+        600,
+        392
+      ],
+      "bytes": 30778,
+      "sha256": "3008d8709c92e56d052adc70b68be171eae723bc684870f902f5fdb82ccf997f",
+      "used_in_email": true
+    },
+    {
+      "file": "assets/feature-left.jpg",
+      "dimensions": [
+        600,
+        784
+      ],
+      "bytes": 58360,
+      "sha256": "5d3b00500ec69602d16da8c21f0e7f7855f4207b0bc8b863857f46ffe960dd6f",
+      "used_in_email": true
+    },
+    {
+      "file": "assets/feature-top-right.jpg",
+      "dimensions": [
+        600,
+        392
+      ],
+      "bytes": 29608,
+      "sha256": "26d97dfc7c907f4135bb9ed430a7aeb78695fbae217a61838b0152c4512f7423",
+      "used_in_email": true
+    },
+    {
+      "file": "assets/hero-background.png",
+      "dimensions": [
+        2400,
+        2560
+      ],
+      "bytes": 5345536,
+      "sha256": "6a2f04f96c0fc5827a85a575e1ca9ec8dce46ef373440df0f373e77a3541168b",
+      "used_in_email": false
+    },
+    {
+      "file": "assets/hero-banner.jpg",
+      "dimensions": [
+        1200,
+        1280
+      ],
+      "bytes": 147839,
+      "sha256": "7f450d06261eea6c7c77f01570e6eb054213939ac6512bff391f5078cf9b10ae",
+      "used_in_email": false
+    },
+    {
+      "file": "assets/hero-content.jpg",
+      "dimensions": [
+        1200,
+        1160
+      ],
+      "bytes": 142080,
+      "sha256": "dac7a21395a669f6f14ef9cd3c520538465074a40af4af7485209c6af3d25837",
+      "used_in_email": true
+    },
+    {
+      "file": "assets/logo.png",
+      "dimensions": [
+        414,
+        33
+      ],
+      "bytes": 5021,
+      "sha256": "23e417a21b5c0ae7c8027b951bbe022b7b9715e250739c18490486159b4669c9",
+      "used_in_email": true
+    },
+    {
+      "file": "assets/rewards-platform.png",
+      "dimensions": [
+        2400,
+        2400
+      ],
+      "bytes": 4754700,
+      "sha256": "a41bdd6cb4a554c037c721829838068046947382b1b29f8e79bea87be3161120",
+      "used_in_email": false
+    },
+    {
+      "file": "assets/spreads-tower.png",
+      "dimensions": [
+        2400,
+        1442
+      ],
+      "bytes": 2949946,
+      "sha256": "9d9bb1e159c620c06aa84ff11fb4c25bb4acb682bd0cb95f1b95d5c3266abe68",
+      "used_in_email": false
+    }
+  ]
+}
